@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+
+    <script src="scripts/main.js" defer></script>
+    <script src="https://unpkg.com/imask"></script>
+
     <title>Cartail</title>
 </head>
 <body>
     <header>
-        <div class="header__content content">
+        <div class="content header__content">
             <img 
             class="header__content_logo"
             src="resources/icons/header logo.svg"
@@ -30,6 +34,72 @@
             </div>
         </div>
     </header>
+
+    <section class="hero">
+        <div class="hero__content content">
+            <div class="hero__content_lead">
+                <p class="hero__content_lead_title">
+                    <span>Узнайте <span class="hero__content_lead_title__strong_line">сколько стоит</span></span>
+                    <span><span class="hero__content_lead_title__strong_line">Ваш авто</span> и доступный</span>
+                    <span>займ <span class="hero__content_lead_title__strong_line">за 1 минуту!</span></span>
+                </p>
+
+                <div class="hero__content_lead_form">
+                    <span class="hero__content_lead_form_text">
+                        Укажите Ваш номер телефона
+                    </span>
+                    
+                    <div class="hero__content_lead_form_phone_input">
+                        <img 
+                        src="resources/icons/phone input icon.svg"
+                        alt="phone input icon"
+                        class="hero__content_lead_form_phone_input_phone_icon"
+                        />
+
+                        <div class="hero__content_lead_form_phone_input_mask">
+                            <span class="hero__content_lead_form_phone_input_phone_prefix">
+                                +7
+                            </span>
+
+                            <input 
+                            type="tel"
+                            id="phone_input"
+                            placeholder="(905) 555-75-85"
+                            size="16"
+                            />
+                        </div>
+                    </div>
+
+                    <div class="hero__content_lead_form_confirmation">
+                        <input type="checkbox" id="privacy_policy">
+                        <label for="privacy_policy" class="cartail_checkbox">
+                            <img 
+                            class="cartail_checkbox_checkmark"
+                            src="resources/icons/checkmark.svg"
+                            alt="checkmark">
+                        </label>
+                        <label class="hero__content_lead_form_confirmation_label">
+                            Я ознакомлен c
+                            <a href="#" class="hero__content_lead_form_confirmation_label_policy_link">политикой конфиденциальности</a>
+                        </label>
+                    </div>
+                    
+                    <button class="hero__content_lead_form_submit_btn">
+                        <span>Оставить заявку</span>
+                        <img 
+                        src="resources/icons/click.svg" 
+                        alt="click icon">
+                    </button>
+                </div>
+            </div>
+
+            <img 
+            src="resources/icons/car icon.svg"
+            alt="Car icon"
+            class="hero__content_car_icon"
+            />
+        </div>
+    </section>
     </div>
 </body>
 </html>

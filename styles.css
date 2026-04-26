@@ -15,6 +15,26 @@ body {
     align-items: center;
 }
 
+button
+{
+    padding: 0;
+}
+
+input
+{
+    padding: 0;
+}
+
+a
+{
+    color: black;
+}
+
+p
+{
+    margin: 0;
+}
+
 .content
 {
     width: 100%;
@@ -23,7 +43,54 @@ body {
     justify-content: space-between;
 }
 
+#privacy_policy:checked +
+.cartail_checkbox
+.cartail_checkbox_checkmark
+{
+    opacity: 1;
+}
+
+.checkbox
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type="checkbox"]
+{
+    opacity: 0;
+    position: absolute;
+}
+
+.cartail_checkbox
+{
+    width: 20px;
+    height: 20px;
+    border: none;
+    box-shadow: inset 0 0 0 1px black;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+}
+
+.cartail_checkbox:hover
+{
+    opacity: 0.45;
+}
+
+.cartail_checkbox
+.cartail_checkbox_checkmark
+{
+    opacity: 0;
+    transition: 0.2s;
+}
+
 /* START: Header */
+/* TODO: rearrange blocks to separate *.css files */
 header 
 {
     display: flex;
@@ -71,6 +138,7 @@ header .header__content_contacts .header__content_contacts_number
         padding-top: 21px;
         padding-left: 20px;
         padding-right: 20px;
+        padding-bottom: 45px;
     }
     
     header .header__content_contacts .header__content_contacts_number
@@ -111,3 +179,303 @@ header .header__content_contacts .header__content_contacts_number
 }
 
 /* END: Header */
+
+/* START: Hero */
+.hero
+{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 122px;
+    padding-right: 21vw;
+    padding-left: 20vw;
+}
+
+.hero
+.hero__content
+{
+    max-width: 1148px;
+}
+
+.hero 
+.hero__content 
+.hero__content_lead
+{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 86px;
+}
+
+.hero
+.hero__content
+.hero__content_lead
+.hero__content_lead_title
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 2rem;
+    width: 465px;
+    line-height: 60px;
+}
+
+
+.hero 
+.hero__content 
+.hero__content_lead
+.hero__content_lead_title
+.hero__content_lead_title__strong_line
+{
+    font-weight: bold;
+}
+
+.hero 
+.hero__content 
+.hero__content_lead
+.hero__content_lead_form
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero 
+.hero__content 
+.hero__content_lead
+.hero__content_lead_form
+.hero__content_lead_form_text
+{
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.hero 
+.hero__content 
+.hero__content_lead
+.hero__content_lead_form
+.hero__content_lead_form_submit_btn
+{
+    background-color: #2CC9B8;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    padding-left: 70px;
+    padding-right: 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    border-radius: 15px;
+    border: none;
+    box-shadow: inset 0 0 0 1px black;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.hero 
+.hero__content 
+.hero__content_lead
+.hero__content_lead_form
+.hero__content_lead_form_submit_btn:hover {
+    opacity: 0.8;
+}
+
+.hero 
+.hero__content 
+.hero__content_lead
+.hero__content_lead_form
+.hero__content_lead_form_submit_btn:active {
+    transform: translateY(3px);
+}
+
+.hero 
+.hero__content 
+.hero__content_lead
+.hero__content_lead_form
+.hero__content_lead_form_phone_input
+{
+    margin-bottom: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    width: 320px;
+    height: 60px;
+    justify-content: center;
+    gap: 15px;
+}
+
+.hero 
+.hero__content 
+.hero__content_lead
+.hero__content_lead_form
+.hero__content_lead_form_phone_input
+.hero__content_lead_form_phone_input_phone_icon
+{
+    width: 16px;
+    height: 16px;
+}
+
+.hero 
+.hero__content 
+.hero__content_lead
+.hero__content_lead_form
+.hero__content_lead_form_phone_input
+.hero__content_lead_form_phone_input_mask
+{
+   display: flex;
+   gap: 6px;
+}
+
+.hero 
+.hero__content 
+.hero__content_lead
+.hero__content_lead_form
+.hero__content_lead_form_phone_input
+.hero__content_lead_form_phone_input_phone_prefix
+{
+    font-size: 1.18rem;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type="tel"]
+{
+    display: flex;
+    border: none;
+    font-family: "Montserrat", sans-serif;
+    background: transparent;
+    font-weight: 500;
+    font-size: 1.18rem;
+    text-align: start;
+    height: 62px;
+    outline: none;
+}
+
+.hero 
+.hero__content 
+.hero__content_lead
+.hero__content_lead_form
+.hero__content_lead_form_confirmation
+{
+    margin-bottom: 20px;
+    display: inline-flex;
+    gap: 14px;
+    align-items: center;
+}
+
+.hero 
+.hero__content 
+.hero__content_lead
+.hero__content_lead_form
+.hero__content_lead_form_confirmation
+.hero__content_lead_form_confirmation_label
+{
+    font-size: 0.55rem;
+    font-weight: 300;
+}
+
+.hero 
+.hero__content 
+.hero__content_lead
+.hero__content_lead_form
+.hero__content_lead_form_confirmation
+.hero__content_lead_form_confirmation_label
+.hero__content_lead_form_confirmation_label_policy_link
+{
+    transition: 0.2s;
+}
+
+.hero 
+.hero__content 
+.hero__content_lead
+.hero__content_lead_form
+.hero__content_lead_form_confirmation
+.hero__content_lead_form_confirmation_label
+.hero__content_lead_form_confirmation_label_policy_link:hover
+{
+    opacity: 0.55;
+}
+
+.hero
+.hero__content
+.hero__content_car_icon
+{
+    padding-bottom: 49px;
+    padding-top: 153px;
+}
+
+@media (max-width: 1872px)
+{
+    .hero
+    .hero__content
+    .hero__content_car_icon
+    {
+        overflow: visible;
+        position: relative;
+        width: 55%;
+        object-fit: none;
+        object-position: left;
+        margin-left: -5%;
+        /* padding: 0; */
+    }
+}
+
+@media (max-width:1023px)
+{
+    .hero
+    {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    .hero
+    .hero__content
+    {
+        justify-content: center;   
+        text-align: center;
+    }
+    
+    .hero
+    .hero__content
+    .hero__content_lead
+    {
+        align-items: center;
+        gap: 0;
+    }
+
+    .hero
+    .hero__content
+    .hero__content_car_icon
+    {
+        display: block;
+        width: 85%;
+        min-width: 362px;
+        padding: 0;
+        margin: 0;
+        object-position: center;
+        object-fit:unset;
+        margin-top: 34px;
+        margin-bottom: 25px;
+    }
+/* TODO: replace with insertion to lead block */
+
+}
+
+@media (max-width: 599px)
+{
+    .hero 
+    .hero__content
+    .hero__content_lead
+    .hero__content_lead_title
+    {
+        flex-flow: wrap;
+        line-height: 40px;
+        font-size: 1.4rem;
+        height: 110px;
+        width: 320px;
+    }
+}
