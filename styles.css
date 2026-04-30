@@ -35,6 +35,19 @@ p
     margin: 0;
 }
 
+h3
+{
+    margin: 0;
+    font-size: clamp(1.4rem, 2vw, 1.6rem); /* TODO: rearrange to header classes */
+
+    line-height: 40px;
+    font-weight: 450;
+    color: white;
+    text-align: center;
+    display: flex;
+    white-space: nowrap;
+}
+
 .content
 {
     width: 100%;
@@ -420,7 +433,6 @@ input[type="tel"]
         object-fit: none;
         object-position: left;
         margin-left: -5%;
-        /* padding: 0; */
     }
 }
 
